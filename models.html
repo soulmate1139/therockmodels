@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rock Agency Models Selection Results 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* Welcome Section Styles */
+        .welcome-message {
+            margin-bottom: 40px;
+            background: linear-gradient(to bottom, #ffffff, #fafafa);
+            border-bottom: 3px solid #4CAF50;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #1a1a1a;
+            font-size: 2em;
+            margin-bottom: 30px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .message-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .announcement {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #2c2c2c;
+            margin-bottom: 35px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        /* Next Steps Section */
+        .next-steps-section {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 35px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e9ecef;
+        }
+
+        .next-steps-section h3 {
+            color: #1a1a1a;
+            font-size: 1.4em;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .steps-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+
+        .step-item:hover {
+            transform: translateX(5px);
+        }
+
+        .step-icon {
+            font-size: 1.5em;
+            color: #4CAF50;
+            background: #f0f9f0;
+            padding: 10px;
+            border-radius: 50%;
+            min-width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .step-item p {
+            margin: 0;
+            color: #444;
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+
+        /* Support Information */
+        .support-info {
+            text-align: center;
+            color: #555;
+            margin-top: 35px;
+            padding: 25px;
+            background: #fcfcfc;
+            border-radius: 8px;
+        }
+
+        .support-info p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .contact-note {
+            font-size: 0.95em;
+            color: #666;
+            padding: 15px;
+            background: #fff;
+            border-radius: 6px;
+            display: inline-block;
+        }
+
+        .highlight {
+            color: #2e7d32;
+            font-weight: 600;
+            border-bottom: 1px dashed #4CAF50;
+            padding-bottom: 2px;
+        }
+
+        /* Responsive Styles */
+        /* Professional Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+                padding: 0 10px;
+            }
+
+            .card {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+
+            .announcement {
+                font-size: 1em;
+                padding: 0 10px;
+            }
+
+            .next-steps-section {
+                padding: 20px 15px;
+            }
+
+            .step-item {
+                flex-direction: row;
+                padding: 0 5px;
+            }
+
+            .models-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .models-table th,
+            .models-table td {
+                padding: 10px;
+            }
+
+            .search-bar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .search-input {
+                width: 100%;
+            }
+
+            .table-footer {
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+            }
+
+            .pagination {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .pagination button {
+                padding: 6px 10px;
+                font-size: 0.9em;
+            }
+
+            .page-info {
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                padding: 15px 10px;
+            }
+
+            .header h1 {
+                font-size: 1.5em;
+                line-height: 1.3;
+            }
+
+            .section-title {
+                font-size: 1.3em;
+                margin-bottom: 20px;
+            }
+
+            .step-item {
+                padding: 12px;
+            }
+
+            .step-icon {
+                font-size: 1.2em;
+                min-width: 40px;
+                height: 40px;
+                padding: 8px;
+            }
+
+            .step-item p {
+                font-size: 0.95em;
+                line-height: 1.5;
+            }
+
+            .next-steps-section {
+                padding: 20px 15px;
+            }
+
+            .support-info {
+                padding: 20px 15px;
+            }
+
+            .contact-note {
+                padding: 12px;
+                font-size: 0.9em;
+            }
+        }
+
+        .qualified-models h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+        }
+
+        .models-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: white;
+        }
+
+        .models-table th,
+        .models-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .models-table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+            position: sticky;
+            top: 0;
+        }
+
+        .models-table tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .status-badge {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            font-weight: 500;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .pagination button {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .pagination button:hover:not(:disabled) {
+            background: #f0f0f0;
+        }
+
+        .pagination button.active {
+            background: #000;
+            color: white;
+            border-color: #000;
+        }
+
+        .pagination button:disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .table-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .page-info {
+            color: #666;
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 300px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <br>
+            <h1>The Rock Agency Hot List for 2025</h1>
+        </div>
+
+        <div class="welcome-message card">
+            <h2 class="section-title">Welcome to The Rock Agency
+            </h2>
+            <div class="message-content">
+                <p class="announcement">
+                    We are delighted to announce your acceptance into the The Rock Agency Models 2025 roster. Our selection committee
+                    has thoroughly reviewed all applications, and we are confident that each selected individual
+                    represents the exceptional standards and diversity we cherish at The Rock Agency Models.
+                </p>
+
+                <div class="next-steps-section">
+                    <h3>Essential Next Steps</h3>
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <span class="step-icon">📧</span>
+                            <p>Review your onboarding documentation as soon as you receive it from your agent.</p>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-icon">👤</span>
+                            <p>Complete your digital portfolio setup and verification within the next 7 business days
+                            </p>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-icon">📅</span>
+                            <p>Book your orientation session with your designated agent through our scheduling portal
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-info">
+                    <p>Our commitment is to nurture your talent and support your journey in the modeling industry. Your
+                        success is our priority, and we look forward to being part of your professional growth.</p>
+                    <p class="contact-note">For any inquiries, please don't hesitate to reach out to your assigned agent
+                        or contact our talent development team at <span class="highlight">support@therockagencymodels.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="qualified-models card">
+            <h2>Qualified Models List</h2>
+            <div class="search-bar">
+                <div class="page-info">
+                    <span>Total Qualified: 35 models</span>
+                </div>
+                <input type="text" class="search-input" id="searchInput" placeholder="Search by name or location...">
+            </div>
+            <table class="models-table">
+                <thead>
+                    <tr>
+                        <th>Candidate #</th>
+                        <th>Full Name</th>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th>Age</th>
+                        <th>Height</th>
+                        <th>Division</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Table content will be populated by JavaScript -->
+                </tbody>
+            </table>
+            <div class="table-footer">
+                <div id="pageInfo" class="page-info">Showing 1-10 of 35 entries</div>
+                <div class="pagination" id="pagination">
+                    <!-- Pagination buttons will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data - 35 records
+        const modelData = [
+            { id: 'TRA2025001', name: 'Sofia Anderson', country: 'United States', city: 'New York', age: 21, height: '175cm', division: 'Editorial' },
+            { id: 'TRA2025002', name: 'Emma Chen', country: 'Canada', city: 'Toronto', age: 19, height: '178cm', division: 'Runway' },
+            { id: 'TRA2025003', name: 'Lucas Martinez', country: 'Spain', city: 'Barcelona', age: 23, height: '185cm', division: 'Commercial' },
+            { id: 'TRA2025004', name: 'Mia Johnson', country: 'United Kingdom', city: 'London', age: 20, height: '176cm', division: 'Editorial' },
+            { id: 'TRA2025005', name: 'Alexander Kim', country: 'South Korea', city: 'Seoul', age: 22, height: '183cm', division: 'Runway' },
+            { id: 'TRA2025006', name: 'Isabella Silva', country: 'Brazil', city: 'São Paulo', age: 18, height: '177cm', division: 'Commercial' },
+            { id: 'TRA2025007', name: 'Liam O\'Connor', country: 'Ireland', city: 'Dublin', age: 24, height: '188cm', division: 'Editorial' },
+            { id: 'TRA2025008', name: 'Nina Petrova', country: 'Russia', city: 'Moscow', age: 21, height: '179cm', division: 'Runway' },
+            { id: 'TRA2025009', name: 'Marco Rossi', country: 'Italy', city: 'Milan', age: 22, height: '184cm', division: 'Commercial' },
+            { id: 'TRA2025010', name: 'Yuki Tanaka', country: 'Japan', city: 'Tokyo', age: 20, height: '174cm', division: 'Editorial' },
+            { id: 'TRA2025011', name: 'Olivia Wilson', country: 'Australia', city: 'Sydney', age: 19, height: '176cm', division: 'Runway' },
+            { id: 'TRA2025012', name: 'Daniel García', country: 'Mexico', city: 'Mexico City', age: 23, height: '186cm', division: 'Commercial' },
+            { id: 'TRA2025013', name: 'Sophie Martin', country: 'France', city: 'Paris', age: 21, height: '175cm', division: 'Editorial' },
+            { id: 'TRA2025014', name: 'Thomas Schmidt', country: 'Germany', city: 'Berlin', age: 24, height: '187cm', division: 'Runway' },
+            { id: 'TRA2025015', name: 'Ana Santos', country: 'Portugal', city: 'Lisbon', age: 20, height: '178cm', division: 'Commercial' },
+            { id: 'TRA2025016', name: 'Zara Ahmed', country: 'UAE', city: 'Dubai', age: 22, height: '177cm', division: 'Editorial' },
+            { id: 'TRA2025017', name: 'Leo Wong', country: 'Hong Kong', city: 'Hong Kong', age: 21, height: '182cm', division: 'Runway' },
+            { id: 'TRA2025018', name: 'Julia Berg', country: 'Sweden', city: 'Stockholm', age: 19, height: '176cm', division: 'Commercial' },
+            { id: 'TRA2025019', name: 'Oscar Nilsson', country: 'Norway', city: 'Oslo', age: 23, height: '185cm', division: 'Editorial' },
+            { id: 'TRA2025020', name: 'Elena Popov', country: 'Ukraine', city: 'Kiev', age: 20, height: '178cm', division: 'Runway' },
+            { id: 'TRA2025021', name: 'Andrea Costa', country: 'Argentina', city: 'Buenos Aires', age: 21, height: '174cm', division: 'Commercial' },
+            { id: 'TRA2025022', name: 'Kai Mueller', country: 'Switzerland', city: 'Zurich', age: 22, height: '183cm', division: 'Editorial' },
+            { id: 'TRA2025023', name: 'Luna Park', country: 'South Korea', city: 'Busan', age: 19, height: '175cm', division: 'Runway' },
+            { id: 'TRA2025024', name: 'Carlos Mendoza', country: 'Colombia', city: 'Bogotá', age: 24, height: '186cm', division: 'Commercial' },
+            { id: 'TRA2025025', name: 'Ava Williams', country: 'New Zealand', city: 'Auckland', age: 20, height: '177cm', division: 'Editorial' },
+            { id: 'TRA2025026', name: 'Hassan Ali', country: 'Egypt', city: 'Cairo', age: 23, height: '184cm', division: 'Runway' },
+            { id: 'TRA2025027', name: 'Maria Sanchez', country: 'Chile', city: 'Santiago', age: 21, height: '176cm', division: 'Commercial' },
+            { id: 'TRA2025028', name: 'Filip Novak', country: 'Czech Republic', city: 'Prague', age: 22, height: '185cm', division: 'Editorial' },
+            { id: 'TRA2025029', name: 'Sara Jensen', country: 'Denmark', city: 'Copenhagen', age: 19, height: '178cm', division: 'Runway' },
+            { id: 'TRA2025030', name: 'Luca Romano', country: 'Italy', city: 'Rome', age: 23, height: '182cm', division: 'Commercial' },
+            { id: 'TRA2025031', name: 'Nina Patel', country: 'India', city: 'Mumbai', age: 20, height: '175cm', division: 'Editorial' },
+            { id: 'TRA2025032', name: 'Jan van der Berg', country: 'Netherlands', city: 'Amsterdam', age: 22, height: '187cm', division: 'Runway' },
+            { id: 'TRA2025033', name: 'Carmen Rodriguez', country: 'Spain', city: 'Madrid', age: 21, height: '176cm', division: 'Commercial' },
+            { id: 'TRA2025034', name: 'David Cohen', country: 'Israel', city: 'Tel Aviv', age: 24, height: '183cm', division: 'Editorial' },
+            { id: 'TRA2025035', name: 'Mai Nguyen', country: 'Vietnam', city: 'Ho Chi Minh City', age: 19, height: '174cm', division: 'Runway' },
+            { id: 'TRA2025036', name: 'Najahuah Coombs', country: 'United States', city: 'Atlanta', age: 20, height: '174cm', division: 'Commercial' },
+            { id: 'TRA2025037', name: 'Kim', country: 'United States', city: 'Denver', age: 20, height: '183cm', division: 'Commercial' }
+        ];
+
+        let currentPage = 1;
+        const recordsPerPage = 10;
+        let filteredData = [...modelData];
+
+        // Function to display records for current page
+        function displayRecords(page) {
+            const start = (page - 1) * recordsPerPage;
+            const end = start + recordsPerPage;
+            const records = filteredData.slice(start, end);
+
+            const tableBody = document.getElementById('tableBody');
+            tableBody.innerHTML = '';
+
+            records.forEach(record => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${record.id}</td>
+                    <td>${record.name}</td>
+                    <td>${record.country}</td>
+                    <td>${record.city}</td>
+                    <td>${record.age}</td>
+                    <td>${record.height}</td>
+                    <td>${record.division}</td>
+                    <td><span class="status-badge">Qualified</span></td>
+                `;
+                tableBody.appendChild(row);
+            });
+
+            updatePagination();
+            updatePageInfo();
+        }
+
+        // Function to update pagination buttons
+        function updatePagination() {
+            const totalPages = Math.ceil(filteredData.length / recordsPerPage);
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = '';
+
+            // Previous button
+            const prevButton = document.createElement('button');
+            prevButton.textContent = 'Previous';
+            prevButton.disabled = currentPage === 1;
+            prevButton.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayRecords(currentPage);
+                }
+            };
+            pagination.appendChild(prevButton);
+
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement('button');
+                button.textContent = i;
+                button.classList.toggle('active', i === currentPage);
+                button.onclick = () => {
+                    currentPage = i;
+                    displayRecords(currentPage);
+                };
+                pagination.appendChild(button);
+            }
+
+            // Next button
+            const nextButton = document.createElement('button');
+            nextButton.textContent = 'Next';
+            nextButton.disabled = currentPage === totalPages;
+            nextButton.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayRecords(currentPage);
+                }
+            };
+            pagination.appendChild(nextButton);
+        }
+
+        // Function to update page information
+        function updatePageInfo() {
+            const start = (currentPage - 1) * recordsPerPage + 1;
+            const end = Math.min(start + recordsPerPage - 1, filteredData.length);
+            const total = filteredData.length;
+            document.getElementById('pageInfo').textContent =
+                `Showing ${start}-${end} of ${total} entries`;
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            const searchValue = this.value.toLowerCase();
+            filteredData = modelData.filter(record => {
+                return (
+                    record.name.toLowerCase().includes(searchValue) ||
+                    record.country.toLowerCase().includes(searchValue) ||
+                    record.city.toLowerCase().includes(searchValue) ||
+                    record.division.toLowerCase().includes(searchValue)
+                );
+            });
+            currentPage = 1; // Reset to first page when searching
+            displayRecords(currentPage);
+        });
+
+        // Initialize the table
+        displayRecords(1);
+    </script>
+</body>
+
+</html>
