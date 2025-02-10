@@ -1,0 +1,101 @@
+.avia_wpml_language_switch{
+position: relative;
+padding: 0px 0 0 10px;
+height: 30px;
+line-height: 36px;
+margin: 0 0 0 0;
+z-index: 151;
+-webkit-backface-visibility: hidden;
+top:-2px;
+right:0;
+overflow: hidden;
+}
+.sub_menu ul{
+float:left;
+}
+#top ul.avia_wpml_language_switch  li{
+float:left;
+margin: 0px 0px 0px 5px;
+padding:0;
+border:none;
+}
+.avia_wpml_language_switch li:hover{
+opacity: 0.8;
+}
+.avia_wpml_language_switch li span{
+display:none;
+}
+.avia_wpml_language_switch li .language_flag{
+display:block;
+}
+.avia_wpml_language_switch li .language_flag img{
+display:inline-block;
+border:1px solid rgba(255,255,255,0.2);
+}
+#icl_lang_sel_widget{
+overflow:visible;
+z-index:20;
+}
+.html_header_sidebar #top .avia_wpml_language_switch{
+border-bottom-style:solid;
+border-bottom-width:1px;
+padding:0px 10px;
+}#top .hr.hr-invisible.av-lrrovo7r-8a21ae2e10c5960c46be9f122974be90{
+margin-top:-40px;
+height:1px;
+}
+.flex_cell.av-3kb0a-771952df3093f78495d05bd370622d5e{
+vertical-align:top;
+background:url(https://cmmodels.com/wp-content/uploads/2020/11/model-werden-guide-tipps-belastbarkeit-ehrgeiz-wandlungsfahigkeit-cara-delevingne-winnie-harlow-fotoshoot-runway-backstage-vanity.jpg) 0% 0% no-repeat scroll ;
+}
+.responsive #top #wrap_all .flex_cell.av-3kb0a-771952df3093f78495d05bd370622d5e{
+padding:30px 30px 30px 30px !important;
+}
+.flex_cell.av-m512y-2107fb24df1c19e612a0646cafcb37e7{
+vertical-align:middle;
+}
+.responsive #top #wrap_all .flex_cell.av-m512y-2107fb24df1c19e612a0646cafcb37e7{
+padding:30px 30px 30px 30px !important;
+}
+.flex_cell.av-l5c71789-4190b258d8c2bfef3103b5f2f3147910{
+vertical-align:middle;
+}
+.responsive #top #wrap_all .flex_cell.av-l5c71789-4190b258d8c2bfef3103b5f2f3147910{
+padding:30px 30px 30px 30px !important;
+}
+.flex_cell.av-l5c757tq-b05d48abc2d7318b80bd84a7d683381b{
+vertical-align:middle;
+background:url(https://cmmodels.com/wp-content/uploads/2022/07/modenschau-agentur-backstage-probe-models-event-tipps-fashion-show-backstage-models-waiting.jpg) 50% 50% no-repeat scroll ;
+}
+.responsive #top #wrap_all .flex_cell.av-l5c757tq-b05d48abc2d7318b80bd84a7d683381b{
+padding:30px 30px 30px 30px !important;
+}
+.flex_cell.av-l5c9jybg-1876ebd0870a0d886d5927954e3975f4{
+vertical-align:middle;
+background:url(https://cmmodels.com/wp-content/uploads/2022/07/modenschau-agentur-backstage-probe-models-event-tipps-fashion-show-backstage-models-waiting.jpg) 50% 50% no-repeat scroll ;
+}
+.responsive #top #wrap_all .flex_cell.av-l5c9jybg-1876ebd0870a0d886d5927954e3975f4{
+padding:30px 30px 30px 30px !important;
+}
+.flex_cell.av-l5c9lbrx-02c7fdc9a089e48893751f3dd0a755fd{
+vertical-align:middle;
+}
+.responsive #top #wrap_all .flex_cell.av-l5c9lbrx-02c7fdc9a089e48893751f3dd0a755fd{
+padding:30px 30px 30px 30px !important;
+}
+.flex_cell.av-utohe-82c962317b0311ad922f9ff07234a625{
+vertical-align:top;
+background:url(https://cmmodels.com/wp-content/uploads/2022/07/model-scout-scouting-street-become-a-model-stores-city-zara-hm-asos.jpg) 0% 50% no-repeat scroll ;
+}
+.responsive #top #wrap_all .flex_cell.av-utohe-82c962317b0311ad922f9ff07234a625{
+padding:30px 30px 30px 30px !important;
+}
+.flex_cell.av-28m6q-367bd716d758e114b77a61b9d0c20268{
+vertical-align:middle;
+}
+.responsive #top #wrap_all .flex_cell.av-28m6q-367bd716d758e114b77a61b9d0c20268{
+padding:30px 30px 30px 30px !important;
+}
+#top .hr.hr-invisible.av-l5c7gge1-e7e67b0cc5d163f92d20e60b93b123e0{
+height:100px;
+}
