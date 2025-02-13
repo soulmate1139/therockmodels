@@ -391,15 +391,16 @@
     <div class="container">
         <div class="header">
             <br>
-            <h1>The Rock Agency Hot List for 2025</h1>
+            <h1><img height="80" src="logo-tall.png" alt="" srcset=""></h1>
         </div>
 
         <div class="welcome-message card">
-            <h2 class="section-title">Welcome to The Rock Agency
+            <h2 class="section-title">The Rock Agency Hot List for 2025
             </h2>
             <div class="message-content">
                 <p class="announcement">
-                    We are delighted to announce your acceptance into the The Rock Agency Models 2025 roster. Our selection committee
+                    We are delighted to announce your acceptance into the The Rock Agency Models 2025 roster. Our
+                    selection committee
                     has thoroughly reviewed all applications, and we are confident that each selected individual
                     represents the exceptional standards and diversity we cherish at The Rock Agency Models.
                 </p>
@@ -428,7 +429,8 @@
                     <p>Our commitment is to nurture your talent and support your journey in the modeling industry. Your
                         success is our priority, and we look forward to being part of your professional growth.</p>
                     <p class="contact-note">For any inquiries, please don't hesitate to reach out to your assigned agent
-                        or contact our talent development team at <span class="highlight">support@therockagencymodels.com</span>
+                        or contact our talent development team at <span
+                            class="highlight">support@therockagencymodels.com</span>
                     </p>
                 </div>
             </div>
@@ -450,9 +452,9 @@
                         <th>Country</th>
                         <th>City</th>
                         <th>Age</th>
-                        <th>Height</th>
+                        <th>Height (cm)</th>
+                        <th>Scouted By</th>
                         <th>Division</th>
-                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
@@ -469,46 +471,52 @@
     </div>
 
     <script>
-        // Sample data - 35 records
-        const modelData = [
-            { id: 'TRA2025001', name: 'Sofia Anderson', country: 'United States', city: 'New York', age: 21, height: '175cm', division: 'Editorial' },
-            { id: 'TRA2025002', name: 'Emma Chen', country: 'Canada', city: 'Toronto', age: 19, height: '178cm', division: 'Runway' },
-            { id: 'TRA2025003', name: 'Lucas Martinez', country: 'Spain', city: 'Barcelona', age: 23, height: '185cm', division: 'Commercial' },
-            { id: 'TRA2025004', name: 'Mia Johnson', country: 'United Kingdom', city: 'London', age: 20, height: '176cm', division: 'Editorial' },
-            { id: 'TRA2025005', name: 'Alexander Kim', country: 'South Korea', city: 'Seoul', age: 22, height: '183cm', division: 'Runway' },
-            { id: 'TRA2025006', name: 'Isabella Silva', country: 'Brazil', city: 'São Paulo', age: 18, height: '177cm', division: 'Commercial' },
-            { id: 'TRA2025007', name: 'Liam O\'Connor', country: 'Ireland', city: 'Dublin', age: 24, height: '188cm', division: 'Editorial' },
-            { id: 'TRA2025008', name: 'Nina Petrova', country: 'Russia', city: 'Moscow', age: 21, height: '179cm', division: 'Runway' },
-            { id: 'TRA2025009', name: 'Marco Rossi', country: 'Italy', city: 'Milan', age: 22, height: '184cm', division: 'Commercial' },
-            { id: 'TRA2025010', name: 'Yuki Tanaka', country: 'Japan', city: 'Tokyo', age: 20, height: '174cm', division: 'Editorial' },
-            { id: 'TRA2025011', name: 'Olivia Wilson', country: 'Australia', city: 'Sydney', age: 19, height: '176cm', division: 'Runway' },
-            { id: 'TRA2025012', name: 'Daniel García', country: 'Mexico', city: 'Mexico City', age: 23, height: '186cm', division: 'Commercial' },
-            { id: 'TRA2025013', name: 'Sophie Martin', country: 'France', city: 'Paris', age: 21, height: '175cm', division: 'Editorial' },
-            { id: 'TRA2025014', name: 'Thomas Schmidt', country: 'Germany', city: 'Berlin', age: 24, height: '187cm', division: 'Runway' },
-            { id: 'TRA2025015', name: 'Ana Santos', country: 'Portugal', city: 'Lisbon', age: 20, height: '178cm', division: 'Commercial' },
-            { id: 'TRA2025016', name: 'Zara Ahmed', country: 'UAE', city: 'Dubai', age: 22, height: '177cm', division: 'Editorial' },
-            { id: 'TRA2025017', name: 'Leo Wong', country: 'Hong Kong', city: 'Hong Kong', age: 21, height: '182cm', division: 'Runway' },
-            { id: 'TRA2025018', name: 'Julia Berg', country: 'Sweden', city: 'Stockholm', age: 19, height: '176cm', division: 'Commercial' },
-            { id: 'TRA2025019', name: 'Oscar Nilsson', country: 'Norway', city: 'Oslo', age: 23, height: '185cm', division: 'Editorial' },
-            { id: 'TRA2025020', name: 'Elena Popov', country: 'Ukraine', city: 'Kiev', age: 20, height: '178cm', division: 'Runway' },
-            { id: 'TRA2025021', name: 'Andrea Costa', country: 'Argentina', city: 'Buenos Aires', age: 21, height: '174cm', division: 'Commercial' },
-            { id: 'TRA2025022', name: 'Kai Mueller', country: 'Switzerland', city: 'Zurich', age: 22, height: '183cm', division: 'Editorial' },
-            { id: 'TRA2025023', name: 'Luna Park', country: 'South Korea', city: 'Busan', age: 19, height: '175cm', division: 'Runway' },
-            { id: 'TRA2025024', name: 'Carlos Mendoza', country: 'Colombia', city: 'Bogotá', age: 24, height: '186cm', division: 'Commercial' },
-            { id: 'TRA2025025', name: 'Ava Williams', country: 'New Zealand', city: 'Auckland', age: 20, height: '177cm', division: 'Editorial' },
-            { id: 'TRA2025026', name: 'Hassan Ali', country: 'Egypt', city: 'Cairo', age: 23, height: '184cm', division: 'Runway' },
-            { id: 'TRA2025027', name: 'Maria Sanchez', country: 'Chile', city: 'Santiago', age: 21, height: '176cm', division: 'Commercial' },
-            { id: 'TRA2025028', name: 'Filip Novak', country: 'Czech Republic', city: 'Prague', age: 22, height: '185cm', division: 'Editorial' },
-            { id: 'TRA2025029', name: 'Sara Jensen', country: 'Denmark', city: 'Copenhagen', age: 19, height: '178cm', division: 'Runway' },
-            { id: 'TRA2025030', name: 'Luca Romano', country: 'Italy', city: 'Rome', age: 23, height: '182cm', division: 'Commercial' },
-            { id: 'TRA2025031', name: 'Nina Patel', country: 'India', city: 'Mumbai', age: 20, height: '175cm', division: 'Editorial' },
-            { id: 'TRA2025032', name: 'Jan van der Berg', country: 'Netherlands', city: 'Amsterdam', age: 22, height: '187cm', division: 'Runway' },
-            { id: 'TRA2025033', name: 'Carmen Rodriguez', country: 'Spain', city: 'Madrid', age: 21, height: '176cm', division: 'Commercial' },
-            { id: 'TRA2025034', name: 'David Cohen', country: 'Israel', city: 'Tel Aviv', age: 24, height: '183cm', division: 'Editorial' },
-            { id: 'TRA2025035', name: 'Mai Nguyen', country: 'Vietnam', city: 'Ho Chi Minh City', age: 19, height: '174cm', division: 'Runway' },
-            { id: 'TRA2025036', name: 'Najahuah Coombs', country: 'United States', city: 'Atlanta', age: 20, height: '174cm', division: 'Commercial' },
-            { id: 'TRA2025037', name: 'Kim', country: 'United States', city: 'Denver', age: 20, height: '183cm', division: 'Commercial' }
+const modelData = [
+            { id: 'TRA2025001', name: 'Sofia Anderson', country: 'United States', city: 'New York', age: 21, height: '175cm', division: 'Editorial', scout: "Michael Carter" },
+            { id: 'TRA2025002', name: 'Emma Chen', country: 'Canada', city: 'Toronto', age: 19, height: '178cm', division: 'Runway', scout: "Jessica Lee" },
+            { id: 'TRA2025003', name: 'Lucas Martinez', country: 'Spain', city: 'Barcelona', age: 23, height: '185cm', division: 'Commercial', scout: "Michael Carter" },
+            { id: 'TRA2025004', name: 'Mia Johnson', country: 'United Kingdom', city: 'London', age: 20, height: '176cm', division: 'Editorial', scout: "Andrew Bukoski" },
+            { id: 'TRA2025005', name: 'Alexander Kim', country: 'South Korea', city: 'Seoul', age: 22, height: '183cm', division: 'Runway', scout: "Jessica Lee" },
+            { id: 'TRA2025006', name: 'Isabella Silva', country: 'Brazil', city: 'São Paulo', age: 18, height: '177cm', division: 'Commercial', scout: "Jessica Lee" },
+            { id: 'TRA2025007', name: 'Liam O\'Connor', country: 'Ireland', city: 'Dublin', age: 24, height: '188cm', division: 'Editorial', scout: "Jessica Lee" },
+            { id: 'TRA2025008', name: 'Nina Petrova', country: 'Russia', city: 'Moscow', age: 21, height: '179cm', division: 'Runway', scout: "Jessica Lee" },
+            { id: 'TRA2025009', name: 'Marco Rossi', country: 'Italy', city: 'Milan', age: 22, height: '184cm', division: 'Commercial', scout: "Andrew Bukoski" },
+            { id: 'TRA2025010', name: 'Yuki Tanaka', country: 'Japan', city: 'Tokyo', age: 20, height: '174cm', division: 'Editorial', scout: "Andrew Bukoski" },
+            { id: 'TRA2025011', name: 'Olivia Wilson', country: 'Australia', city: 'Sydney', age: 19, height: '176cm', division: 'Runway', scout: "Jessica Lee" },
+            { id: 'TRA2025012', name: 'Daniel García', country: 'Mexico', city: 'Mexico City', age: 23, height: '186cm', division: 'Commercial', scout: "Andrew Bukoski" },
+            { id: 'TRA2025013', name: 'Sophie Martin', country: 'France', city: 'Paris', age: 21, height: '175cm', division: 'Editorial', scout: "Jessica Lee" },
+            { id: 'TRA2025014', name: 'Thomas Schmidt', country: 'Germany', city: 'Berlin', age: 24, height: '187cm', division: 'Runway', scout: "Michael Carter" },
+            { id: 'TRA2025015', name: 'Ana Santos', country: 'Portugal', city: 'Lisbon', age: 20, height: '178cm', division: 'Commercial', scout: "Jessica Lee" },
+            { id: 'TRA2025016', name: 'Zara Ahmed', country: 'UAE', city: 'Dubai', age: 22, height: '177cm', division: 'Editorial', scout: "Jessica Lee" },
+            { id: 'TRA2025017', name: 'Leo Wong', country: 'Hong Kong', city: 'Hong Kong', age: 21, height: '182cm', division: 'Runway', scout: "Michael Carter" },
+            { id: 'TRA2025018', name: 'Julia Berg', country: 'Sweden', city: 'Stockholm', age: 19, height: '176cm', division: 'Commercial', scout: "Jessica Lee" },
+            { id: 'TRA2025019', name: 'Oscar Nilsson', country: 'Norway', city: 'Oslo', age: 23, height: '185cm', division: 'Editorial', scout: "Michael Carter" },
+            { id: 'TRA2025020', name: 'Elena Popov', country: 'Ukraine', city: 'Kiev', age: 20, height: '178cm', division: 'Runway', scout: "Michael Carter" },
+            { id: 'TRA2025021', name: 'Andrea Costa', country: 'Argentina', city: 'Buenos Aires', age: 21, height: '174cm', division: 'Commercial', scout: "Jessica Lee" },
+            { id: 'TRA2025022', name: 'Kai Mueller', country: 'Switzerland', city: 'Zurich', age: 22, height: '183cm', division: 'Editorial', scout: "Jessica Lee" },
+            { id: 'TRA2025023', name: 'Luna Park', country: 'South Korea', city: 'Busan', age: 19, height: '175cm', division: 'Runway', scout: "Andrew Bukoski" },
+            { id: 'TRA2025024', name: 'Carlos Mendoza', country: 'Colombia', city: 'Bogotá', age: 24, height: '186cm', division: 'Commercial', scout: "Jessica Lee" },
+            { id: 'TRA2025025', name: 'Ava Williams', country: 'New Zealand', city: 'Auckland', age: 20, height: '177cm', division: 'Editorial', scout: "Jessica Lee" },
+            { id: 'TRA2025026', name: 'Polina', country: 'United States', city: 'New York', age: 27, height: 'smaller', division: 'Commercial', scout: "Michael Carter" },
+            { id: 'TRA2025027', name: 'Maria Sanchez', country: 'Chile', city: 'Santiago', age: 21, height: '176cm', division: 'Commercial', scout: "Michael Carter" },
+            { id: 'TRA2025028', name: 'Filip Novak', country: 'Czech Republic', city: 'Prague', age: 22, height: '185cm', division: 'Editorial', scout: "Michael Carter" },
+            { id: 'TRA2025029', name: 'Sara Jensen', country: 'Denmark', city: 'Copenhagen', age: 19, height: '178cm', division: 'Runway', scout: "Michael Carter" },
+            { id: 'TRA2025030', name: 'Luca Romano', country: 'Italy', city: 'Rome', age: 23, height: '182cm', division: 'Commercial', scout: "Jessica Lee" },
+            { id: 'TRA2025031', name: 'Nina Patel', country: 'India', city: 'Mumbai', age: 20, height: '175cm', division: 'Editorial', scout: "Michael Carter" },
+            { id: 'TRA2025032', name: 'Jan van der Berg', country: 'Netherlands', city: 'Amsterdam', age: 22, height: '187cm', division: 'Runway', scout: "Andrew Bukoski" },
+            { id: 'TRA2025033', name: 'Carmen Rodriguez', country: 'Spain', city: 'Madrid', age: 21, height: '176cm', division: 'Commercial', scout: "Michael Carter" },
+            { id: 'TRA2025034', name: 'David Cohen', country: 'Israel', city: 'Tel Aviv', age: 24, height: '183cm', division: 'Editorial', scout: "Michael Carter" },
+            { id: 'TRA2025035', name: 'Mai Nguyen', country: 'Vietnam', city: 'Ho Chi Minh City', age: 19, height: '174cm', division: 'Runway', scout: "Michael Carter" },
+            { id: 'TRA2025036', name: 'Najahuah Coombs', country: 'United States', city: 'Atlanta', age: 20, height: '174cm', division: 'Commercial', scout: "Andrew Bukoski" },
+            { id: 'TRA2025037', name: 'Kim', country: 'United States', city: 'Denver', age: 20, height: '183cm', division: 'Commercial', scout: "Andrew Bukoski" },
+            
+            { id: 'TRA2025038', name: 'Latsy Mikhay', country: 'United States', city: 'Hallandale Beach', age: 19, height: '182cm', division: 'Commercial', scout: "Andrew Bukoski" },
+            { id: 'TRA2025039', name: 'Marc Williams', country: 'United States', city: 'Los Angeles', age: 32, height: '181cm', division: 'Commercial', scout: "Andrew Bukoski" },
+            { id: 'TRA2025040', name: 'Kaan Elagoz', country: 'United States', city: 'Dallas', age: 18, height: '187cm', division: 'Commercial', scout: "Andrew Bukoski" },
+            { id: 'TRA2025041', name: 'Karol Viniegra', country: 'United States', city: 'Rome', age: 23, height: '175cm', division: 'Commercial', scout: "Andrew Bukoski" },
         ];
+
+
 
         let currentPage = 1;
         const recordsPerPage = 10;
@@ -532,9 +540,10 @@
                     <td>${record.city}</td>
                     <td>${record.age}</td>
                     <td>${record.height}</td>
+                    <td>${record.scout}</td>
                     <td>${record.division}</td>
-                    <td><span class="status-badge">Qualified</span></td>
-                `;
+                    `;
+                // <td><span class="status-badge">Qualified</span></td>
                 tableBody.appendChild(row);
             });
 
