@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rock Agency Models - Identity Verification Consent</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/poppins/4.0.1/poppins.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1E3A8A;
+            --primary-dark: #152B66;
+            --accent-color: #D4AF37;
+            --accent-light: #E5C65C;
+            --text-color: #1F2937;
+            --text-secondary: #4B5563;
+            --background-color: #F8FAFC;
+            --card-background: #FFFFFF;
+            --border-color: #E2E8F0;
+            --notice-bg: #FAFBFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            background: var(--card-background);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            letter-spacing: -0.025em;
+        }
+
+        .notice {
+            background: var(--notice-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-color);
+            text-align: left;
+            margin: 2rem 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .notice h2 {
+            font-size: 1.375rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .notice p {
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .notice ul {
+            padding-left: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .notice li {
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+            position: relative;
+            line-height: 1.7;
+        }
+
+        .notice li::marker {
+            color: var(--accent-color);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.25rem;
+            margin-top: 2.5rem;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            border: 2px solid transparent;
+            min-width: 180px;
+            letter-spacing: 0.025em;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            box-shadow: 0 2px 4px rgba(30, 58, 138, 0.1);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px rgba(30, 58, 138, 0.15);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--notice-bg);
+            color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            .notice {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .btn {
+                width: 100%;
+                min-width: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">
+            <img height="90" src="logo-tall.png" style="height: 90px;">
+          </h1>
+        <h1 style="text-align: center;">Identity Verification Consent</h1>
+        
+        <div class="notice">
+            <h2>Important Notice</h2>
+            <p>The Rock Agency prioritizes your privacy and the security of your personal information. Before proceeding with identity verification, please review the following:</p>
+            <ul>
+                <li>We do not store or retain copies of your personal identification documents.</li>
+                <li>All documents are securely encrypted and processed solely for verification purposes.</li>
+                <li>Once verification is completed, documents are automatically deleted.</li>
+                <li>Your data privacy and security remain our highest priority.</li>
+            </ul>
+            
+            <p>By clicking "I Agree & Continue," you confirm that you:</p>
+            <ul>
+                <li>Consent to providing identification documents for verification.</li>
+                <li>Acknowledge the temporary processing of your personal data.</li>
+                <li>Agree to our privacy policy and terms of service.</li>
+            </ul>
+        </div>
+
+        <div class="buttons">
+            <button onclick="window.location.href='verification-stage.html'" class="btn btn-primary">I Agree & Continue</button>
+            <button onclick="window.history.back()" class="btn btn-secondary">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>
